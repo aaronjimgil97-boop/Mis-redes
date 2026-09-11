@@ -13,7 +13,7 @@ a {
     text-align: center;
 }
 body {
-    background-color: lightblue;
+    background-color: #D6C2A8;
 }
 h1,
 h2,
@@ -58,7 +58,7 @@ a:active {
 }
 body {
     position: relative;
-    background-color: lightblue;
+    background-color: #D6C2A8;
 }
 
 body::before {
