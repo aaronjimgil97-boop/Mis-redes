@@ -50,8 +50,27 @@ a:active {
 }
 
 .logo img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
     border-radius: 50%;
+    transform: translateY(8px);
+}
+body {
+    position: relative;
+    background-color: lightblue;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.15;
+
+    z-index: -1;
 }
