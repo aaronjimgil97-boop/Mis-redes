@@ -4,10 +4,21 @@ botones.forEach(function(boton) {
 
     boton.addEventListener("click", function() {
 
-        const grupo = boton.parentElement;
+        const grupoActual = boton.parentElement;
 
-        grupo.classList.toggle("open");
+        // Cerramos los demás grupos
+        document.querySelectorAll(".social-group").forEach(function(grupo) {
+
+            if (grupo !== grupoActual) {
+                grupo.classList.remove("open");
+            }
+
+        });
+
+        // Abrimos o cerramos el grupo actual
+        grupoActual.classList.toggle("open");
 
     });
 
 });
+
