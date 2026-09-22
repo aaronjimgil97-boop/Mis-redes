@@ -175,3 +175,17 @@ body::before {
     background-color: #b16c27;
 }
 
+.social-icon {
+    width: 30px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
