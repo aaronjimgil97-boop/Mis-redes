@@ -74,3 +74,98 @@ body::before {
 
     z-index: -1;
 }
+/* Botones principales de las redes */
+
+.social-main {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 400px;
+
+    padding: 15px;
+    margin: 0 auto 12px auto;
+
+    box-sizing: border-box;
+
+    border: 1px solid #333;
+    border-radius: 10px;
+
+    background-color: #856641;
+    opacity: 0.75;
+    color: #222;
+   
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Cuando pasamos el ratón por encima */
+
+.social-main:hover {
+    background-color: #e4ddd5;
+    transform: translateY(-2px);
+}
+
+
+/* Cuando pulsamos */
+
+.social-main:active {
+    transform: translateY(1px);
+    background-color: #d8d0c7;
+}
+
+
+/* Icono */
+
+.social-icon {
+    width: 30px;
+    font-size: 22px;
+    text-align: left;
+}
+
+
+/* Nombre */
+
+.social-main > span:nth-child(2) {
+    flex: 1;
+    text-align: center;
+}
+
+
+/* Flecha */
+
+.arrow {
+    width: 30px;
+    font-size: 18px;
+    text-align: right;
+
+    transition: transform 0.3s ease;
+}
+
+.social-links {
+    max-width: 400px;
+    margin: -2px auto 12px auto;
+
+    overflow: hidden;
+
+    max-height: 0;
+    opacity: 0;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease;
+}
+.social-group.open .social-links {
+    max-height: 200px;
+    opacity: 1;
+}
+.social-group.open .arrow {
+    transform: rotate(180deg);
+}
